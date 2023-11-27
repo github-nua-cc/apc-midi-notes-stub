@@ -10,8 +10,6 @@ const CCSLIDER7 = 0;
 const CCSLIDER8 = 0;
 const CCSLIDER9 = 0;
 let myController;
-let fillColour;
-let r, g, b, a;
 //////////////////////////
 // built in P5 function gets called at the beginning
 function setup() {
@@ -71,10 +69,6 @@ function allCC(e) {
             break;
     }
 }
-// compose RGBA colour from variables r, g, b, a
-function calcColour() {
-    fillColour = color('rgba(' + r + ',' + g + ',' + b + ',' + a + ')')
-}
 // gets triggered when the space bar is pressed
 function keyPressed(){
     if(key == ' '){
@@ -86,7 +80,7 @@ function keyPressed(){
 /* EDIT DRAWING FUNCTIONS BELOW */
 //////////////////////////////
 //////////////////////////////
-function drawNote(x, y) {    
+function drawNote(x, y) {   
 }
 function draw() {
 
